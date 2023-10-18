@@ -1,0 +1,53 @@
+.container {
+  min-width: 60%;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 300px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  width: 270px;
+  height: 68px;
+  padding: 10px;
+  background-color: #4c4cc5;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #5c5ccb;
+}
+
+button:hover {
+  background-color: #4646c4;
+}
+
+button:active {
+  transform: translateY(4px);
+}

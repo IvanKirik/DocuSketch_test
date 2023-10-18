@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card">
+    <h1>{{currentIcon}}</h1>
+    <div class="icon">
+      <i
+        appColor
+        [color]=currentColor
+        [class]=currentIcon
+      ></i>
+    </div>
+  </div>
+  <button (click)="click()"
+    [disabled]="isLoading"
+  >
+    <span *ngIf="!isLoading">Переключить</span>
+    <span *ngIf="isLoading"><app-loader></app-loader></span>
+  </button>
+</div>
